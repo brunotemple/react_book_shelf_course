@@ -21,6 +21,12 @@ git push -u origin master
 
 heroku login
 heroku create
-
 heroku addons:create mongolab:sandbox
+heroku config:set SECRET=SUPERSECRET
+
+cd client
+npm run build
+
+git push heroku
+
 
