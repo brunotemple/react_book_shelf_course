@@ -7,3 +7,20 @@ goto client
 
 3 - npm install axios@0.17.1 react-redux@5.0.6 react-router-dom@4.2.2 redux@3.7.2 redux-promise@0.5.3 --save
 4 - npm install react-fontawesome@1.6.1 react-simple-sidenav@0.1.6 redux-thunk@2.2.0 --save
+
+
+pre heroku
+
+git init
+ create .gitignore files => /node_modules
+							/client/node_modules
+git add .
+git commit -m "first commit"
+git remote add origin git@github.com:brunotemple/react_book_shelf_course.git
+git push -u origin master
+
+heroku login
+heroku create
+
+heroku addons:create mongolab:sandbox
+
